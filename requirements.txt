@@ -9,7 +9,7 @@ numpy==1.26.4
 plotly==5.23.0
 
 # ==== Google Gemini API ====
-google-genai==0.3.0
+google-generativeai==0.7.2
 
 # ==== Optional (để hiển thị tiếng Việt & tránh lỗi font) ====
 matplotlib==3.9.2
@@ -31,3 +31,4 @@ openpyxl
 
 # THÊM THƯ VIỆN NÀY ĐỂ GIẢI QUYẾT LỖI to_markdown()
 tabulate
+
