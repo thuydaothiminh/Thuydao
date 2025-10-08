@@ -10,3 +10,5 @@ python-docx
 scipy
 # Thư viện để gọi API Gemini
 google-genai 
+# Force re-deploy
+
