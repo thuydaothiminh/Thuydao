@@ -1,12 +1,18 @@
-# requirements.txt
+# ==== Core Framework ====
+streamlit==1.38.0
 
-# Streamlit - Thư viện giao diện chính
-streamlit
-# Thư viện xử lý dữ liệu bảng
-pandas
-# Thư viện dùng để đọc file Word (.docx)
-python-docx
-# Thư viện chứa các hàm toán học tài chính (như tính IRR)
-scipy
-# Thư viện để gọi API Gemini
-google-genai 
+# ==== Data Processing ====
+pandas==2.2.2
+numpy==1.26.4
+
+# ==== Visualization ====
+plotly==5.23.0
+
+# ==== Google Gemini API ====
+google-genai==0.3.0
+
+# ==== Optional (để hiển thị tiếng Việt & tránh lỗi font) ====
+matplotlib==3.9.2
+
+# ==== Cấu hình khác ====
+python-dotenv==1.0.1
