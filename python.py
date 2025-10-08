@@ -4,7 +4,6 @@ import streamlit as st
 import pandas as pd
 from docx import Document
 import google.generativeai as genai
-import re
 
 # Cấu hình API key cho Google Gemini
 # Nên sử dụng st.secrets để lưu key an toàn
