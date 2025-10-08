@@ -1,14 +1,9 @@
-# python.py - Phiên bản Hoàn chỉnh và Sửa lỗi
+# python.py
 
 import streamlit as st
 import pandas as pd
-import numpy as np
-# Cần import numpy_financial vì các hàm npv/irr đã bị loại khỏi numpy
-# import numpy_financial as npf 
-from google import genai
-from google.genai.errors import APIError
 from docx import Document
-import io
+import google.generativeai as genai
 import re
 
 # Cấu hình API key cho Google Gemini
