@@ -2,6 +2,7 @@
 
 import streamlit as st
 import pandas as pd
+from docx import Document # Thư viện đọc file Word
 import google.generativeai as genai 
 from google.generativeai.errors import APIError # Thư viện này đã được đổi tên
 
