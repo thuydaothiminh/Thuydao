@@ -1,4 +1,4 @@
-# app_phan_tich_kinh_doanh.py
+# python.py
 
 import streamlit as st
 import pandas as pd
