@@ -1,12 +1,10 @@
-# python.py
+# thuydao.py
 
 import streamlit as st
 import pandas as pd
-from docx import Document # Thư viện đọc file Word
-from google import genai
-from google.genai.errors import APIError
-import google.generativeai as genai 
-from google.generativeai.errors import APIError # Thư viện này đã được đổi tên
+from docx import Document
+import google.generativeai as genai
+import re
 
 # Cấu hình API key cho Google Gemini
 # Nên sử dụng st.secrets để lưu key an toàn
