@@ -3,10 +3,8 @@
 import streamlit as st
 import pandas as pd
 from docx import Document
-# THAY ĐỔI: Cách import module Google GenAI
 import google.generativeai as genai
 from google.generativeai.errors import APIError 
-# from google.genai.errors import APIError # Dòng này cũ, cần loại bỏ hoặc sửa
 
 # Cấu hình API key cho Google Gemini
 # Nên sử dụng st.secrets để lưu key an toàn
