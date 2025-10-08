@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-from google import genai
+import google.generativeai as genai
 from google.genai.errors import APIError
 
 # === Fallback an toàn cho plotly ===
@@ -106,8 +106,11 @@ else:
         with st.chat_message("user"):
             st.markdown(user_message)
 
-        client = genai.Client(api_key=api_key)
-        model_name = "gemini-2.5-flash"
+       genai.configure(api_key=api_key)
+
+model = genai.GenerativeModel("gemini-1.5-flash")
+response = model.generate_content(prompt)
+
 
         context = f"""
         Bạn là trợ lý tài chính Agribank.
