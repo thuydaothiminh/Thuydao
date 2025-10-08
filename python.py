@@ -4,7 +4,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 # Cần import numpy_financial vì các hàm npv/irr đã bị loại khỏi numpy
-import numpy_financial as npf 
+# import numpy_financial as npf 
 from google import genai
 from google.genai.errors import APIError
 from docx import Document
