@@ -10,3 +10,4 @@ python-docx
 scipy
 # Thư viện để gọi API Gemini
 google-genai 
+# Thư viện để gọi API Thuydao
