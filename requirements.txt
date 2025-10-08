@@ -1,16 +1,12 @@
 # requirements.txt
 
-# Thư viện chính cho Streamlit
+# Streamlit - Thư viện giao diện chính
 streamlit
-
-# Thư viện xử lý dữ liệu chính
+# Thư viện xử lý dữ liệu bảng
 pandas
-
-# Thư viện cho chức năng AI (sử dụng Gemini API)
-google-genai
-
-# Thư viện cần thiết để pandas đọc và ghi file Excel (.xlsx)
-openpyxl
-
-# THÊM THƯ VIỆN NÀY ĐỂ GIẢI QUYẾT LỖI to_markdown()
-tabulate
+# Thư viện dùng để đọc file Word (.docx)
+python-docx
+# Thư viện chứa các hàm toán học tài chính (như tính IRR)
+scipy
+# Thư viện để gọi API Gemini
+google-genai 
