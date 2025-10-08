@@ -10,8 +10,3 @@ python-docx
 scipy
 # Thư viện để gọi API Gemini
 google-genai 
-# requirements.txt
-
-# ... các thư viện khác (streamlit, pandas, python-docx, scipy)
-google-genai
-
