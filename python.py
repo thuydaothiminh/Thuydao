@@ -1,7 +1,15 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px
 from google import genai
+from google.genai.errors import APIError
+
+# === Fallback an toàn cho plotly ===
+try:
+    import plotly.express as px
+    PLOTLY_AVAILABLE = True
+except ModuleNotFoundError:
+    st.warning("⚠️ Plotly chưa được cài đặt — phần biểu đồ sẽ bị ẩn.")
+    PLOTLY_AVAILABLE = False
 
 # ======================
 # 🔧 CẤU HÌNH ỨNG DỤNG
@@ -72,9 +80,12 @@ data = {
 df = pd.DataFrame(data)
 st.dataframe(df, use_container_width=True)
 
-fig = px.bar(df, x="Ngân hàng", y=["Lãi suất vay (%)", "Lãi suất gửi (%)"],
-             barmode="group", title="So sánh lãi suất vay & gửi")
-st.plotly_chart(fig, use_container_width=True)
+if PLOTLY_AVAILABLE:
+    fig = px.bar(df, x="Ngân hàng", y=["Lãi suất vay (%)", "Lãi suất gửi (%)"],
+                 barmode="group", title="So sánh lãi suất vay & gửi")
+    st.plotly_chart(fig, use_container_width=True)
+else:
+    st.info("📊 Biểu đồ không khả dụng do thiếu thư viện Plotly.")
 
 # ======================
 # 💬 KHUNG CHAT VỚI GEMINI
