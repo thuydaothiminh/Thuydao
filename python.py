@@ -2,8 +2,8 @@
 
 import streamlit as st
 import pandas as pd
-from docx import Document
-import google.generativeai as genai
+import google.generativeai as genai 
+from google.generativeai.errors import APIError # Thư viện này đã được đổi tên
 
 # Cấu hình API key cho Google Gemini
 # Nên sử dụng st.secrets để lưu key an toàn
