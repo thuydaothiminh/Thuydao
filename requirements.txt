@@ -1,34 +1,14 @@
-# ==== Core Framework ====
-streamlit==1.38.0
+# ===============================
+# Agribank SmartFin - AI Financial Advisor
+# File requirements.txt
+# Dùng để deploy trên Streamlit Cloud hoặc máy chủ nội bộ
+# ===============================
 
-# ==== Data Processing ====
+streamlit==1.38.0
 pandas==2.2.2
 numpy==1.26.4
 
-# ==== Visualization ====
-plotly==5.23.0
-
-# ==== Google Gemini API ====
-google-generativeai==0.7.2
-
-# ==== Optional (để hiển thị tiếng Việt & tránh lỗi font) ====
-matplotlib==3.9.2
-
-# ==== Cấu hình khác ====
-python-dotenv==1.0.1
-
-# Thư viện chính cho Streamlit
-streamlit
-
-# Thư viện xử lý dữ liệu chính
-pandas
-
-# Thư viện cho chức năng AI (sử dụng Gemini API)
-google-genai
-
-# Thư viện cần thiết để pandas đọc và ghi file Excel (.xlsx)
-openpyxl
-
-# THÊM THƯ VIỆN NÀY ĐỂ GIẢI QUYẾT LỖI to_markdown()
-tabulate
-
+# (Tùy chọn – nếu sau này trò mở rộng)
+# matplotlib==3.9.0
+# plotly==5.24.0
+# openai==1.37.0
